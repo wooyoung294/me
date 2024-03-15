@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 // import './App.css';
+import profile from './KakaoTalk_20240311_023648831.png'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/mousewheel';
@@ -17,31 +18,28 @@ import type {Swiper as SwiperClass} from "swiper/types";
 function App() {
     const [step, setStep]=
         useState<number>(0)
-    // useEffect(() => {
-    //     const callBack = (newStep:Swiper)=>{
-    //
-    //     }
-    // }, []);
     return (
         <Swiper
-            className={'blog-slider swiperWrapper'}
+            className={'swiperWrapper'}
             direction={'vertical'}
             modules={[Pagination, Navigation, Mousewheel, Scrollbar, A11y]}
-            spaceBetween={50}
+            spaceBetween={200}
             slidesPerView={1}
             scrollbar={{draggable: true}}
             mousewheel={{
                 invert: false
             }}
-            effect={"fade"}
             loop={true}
-            onSlideChange={(e:SwiperClass) => setStep(e.activeIndex)}
+            // activeIndex는 loop가 true일때 제대로 반영이 안됨 따라서 realIndex 사용
+            // onSlideChange={(e:SwiperClass) => setStep(e.activeIndex)}
+            onSlideChange={(e:SwiperClass) => setStep(e.realIndex)}
+            effect="flip"
         >
-            <SwiperSlide className={'blog-slider'}>
+            <SwiperSlide >
                 <div className={'dAc'}>
-                    <div className={'blog-slider__item'}>
-                        <img className={'blog-slider__img'}
-                             src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
+                    <div className={'sliderItem'}>
+                        <img className={'sliderIMG'}
+                             src={profile}
                              alt=""/>
                         <div>
                             <h3>Title</h3>
@@ -57,10 +55,10 @@ function App() {
                     </div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide className={'blog-slider'}>
+            <SwiperSlide >
                 <div className={'dAc'}>
-                    <div className={'blog-slider__item'}>
-                        <img className={'blog-slider__img'}
+                    <div className={'sliderItem'}>
+                        <img className={'sliderIMG'}
                              src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
                              alt=""/>
                         <div>
