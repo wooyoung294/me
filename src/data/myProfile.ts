@@ -116,7 +116,7 @@ export const myProfile: SwiperSlideVo[] = [
             {
                 liType: 'Text',
                 label: 'I n t r o',
-                content: 'TestCafe 이용해 테스트하고 결.'
+                content: 'TestCafe 이용해 테스트하고 결과를 리포트로 보여줍니다.'
             },
             {
                 liType: 'Text',
