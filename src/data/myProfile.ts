@@ -6,7 +6,7 @@ import {
     JavaScriptImg,
     ReactQueryImg,
     Avatar, YoriJoriLogo, SpringImg,
-    WebSocketImg, AuctionLogo, TestCafeLogo
+    WebSocketImg, AuctionLogo, TestCafeLogo, MovieLogo
 } from '../image/exportImg'
 import {SwiperSlideVo} from "../vo/SwiperSlideVo";
 
@@ -65,6 +65,11 @@ export const myProfile: SwiperSlideVo[] = [
                 content: 'https://github.com/wooyoung294/RecipesBack'
             },
             {
+                liType: 'Text',
+                label: 'D e s c',
+                content: 'NextAuth와 Infinite scroll 적용한 프로젝트입니다. '
+            },
+            {
                 liType: 'Badge',
                 label: 'S t a c k',
                 content: [
@@ -97,6 +102,11 @@ export const myProfile: SwiperSlideVo[] = [
                 content: 'https://github.com/wooyoung294/AuctionBack'
             },
             {
+                liType: 'Text',
+                label: 'D e s c',
+                content: '웹소켓을 사용해보고 싶어서 진행한 프로젝트입니다.'
+            },
+            {
                 liType: 'Badge',
                 label: 'S t a c k',
                 content: [
@@ -105,9 +115,40 @@ export const myProfile: SwiperSlideVo[] = [
                     WebSocketImg,
                     SpringImg
                 ]
-            }
+            },
         ],
         visit:'http://wooyu.world'
+    },
+    {
+        title: 'Movie',
+        titleImg: MovieLogo,
+        items: [
+            {
+                liType: 'Text',
+                label: 'I n t r o',
+                content: '영화정보를 표시해주는 사이트입니다 '
+            },
+            {
+                liType: 'Text',
+                label: 'G i t',
+                content: 'https://github.com/wooyoung294/Movie'
+            },
+            {
+                liType: 'Text',
+                label: 'D e s c',
+                content: '스켈레톤 UI와 튜토리얼을 만들어 보기위해 진행한 프로젝트입니다. '
+            },
+            {
+                liType: 'Badge',
+                label: 'S t a c k',
+                content: [
+                    ReactImg,
+                    TypeScriptImg,
+                    ReactQueryImg,
+                ]
+            }
+        ],
+        visit:'http://movie.wooyu.world'
     },
     {
         title: 'TESTCAFE로 TODO 페이지를 테스트해보자!',
@@ -131,7 +172,6 @@ export const myProfile: SwiperSlideVo[] = [
                 ]
             }
         ],
-        visit:'http://testcafe.wooyu.world'
     }
 
 

@@ -9,6 +9,7 @@ import YoriJoriLogo from './YoriJoriLogo.png';
 import SpringImg from './sp.svg';
 import WebSocketImg from './ws.svg';
 import AuctionLogo from './AuctionLogo.png';
+import MovieLogo from './movie-transformed.webp';
 import TestCafeLogo from './tc.png';
 
-export {BootStrapImg,JavaScriptImg,TypeScriptImg,ReactImg,ReactQueryImg,NextJsImg,Avatar,YoriJoriLogo,SpringImg,WebSocketImg,AuctionLogo,TestCafeLogo}
+export {BootStrapImg,JavaScriptImg,TypeScriptImg,ReactImg,ReactQueryImg,NextJsImg,Avatar,YoriJoriLogo,SpringImg,WebSocketImg,AuctionLogo,TestCafeLogo,MovieLogo}
